@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruben Silva - Resume</title>
+  <style>
+    body {
+      background: black;
+      color: #0f0;
+      font-family: 'Courier New', monospace;
+      padding: 20px;
+    }
+
+    #background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #020, #060);
+      z-index: -1;
+      opacity: 0.3;
+      animation: bgMove 20s linear infinite;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0 0; }
+      100% { background-position: 100% 100%; }  
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 12ch;
+      animation: typing 3s steps(21), blink 0.5s step-end infinite;
+      border-right: 2px solid;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+    
+    h2 {
+      color: #0c0;
+      text-decoration: underline;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    li::before {
+      content: "> ";
+    }
+
+    #status {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      color: #0c0;
+    }
+
+    .dots {
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #0c0;
+      margin-right: 4px;
+      opacity: 0.3;
+    }
+
+    .dot.filled {
+      opacity: 1;
+    }
+    
+      #projects {
+    margin-top: 40px;
+  }
+
+  .project {
+    margin-bottom: 30px;
+  }
+
+  .project h3 {
+    color: #0c0;
+    margin-bottom: 10px;
+  }
+
+  .project p {
+    margin: 0;
+  }
+
+  .status-container {
+    margin-top: 10px;
+  }
+
+  .status-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .status-dot.operational {
+    background: #0c0;
+  }
+
+  .status-dot.partial {
+    background: #cc0;
+  }
+
+  .status-dot.down {
+    background: #c00;
+  }
+  
+  #social-media {
+    margin-top: 40px;
+  }
+
+  #social-media h2 {
+    margin-bottom: 10px;
+  }
+
+  #social-media-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  #social-media-list li {
+    margin-bottom: 5px;
+  }
+
+  #social-media-list li::before {
+    content: ">";
+    margin-right: 5px;
+    color: #0c0;
+  }
+
+  #social-media-list a {
+    color: #0f0;
+    text-decoration: none;
+  }
+
+  #social-media-list a:hover {
+    text-decoration: underline;
+  }
+  </style>
+</head>
+<body>
+  <div id="background"></div>
+  
+  <h1>Ruben Silva</h1>
+  
+  <h2>Experience</h2>
+  <ul>
+    <li>Site Reliability Engineer @ Pipedrive (2023-Present)</li>
+    <li>Global Subject Matter Expert @ Webhelp / Apigee GCP (2023-2023)</li>
+    <li>Software Developer @ ATOS Portugal (2022-2023) </li>
+  </ul>
+  
+  <h2>Skills</h2>
+  <ul>
+    <li>JavaScript / Typescript<span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></span></li>
+    <li>Python<span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></span></li>
+    <li>Bash<span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></span></li>
+    <li>Node.js<span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></span></li>
+    <li>Cloud technologies<span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></span></li>
+    <li>Kubernetes<span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></span></li>
+    <li>Istio<span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></span></li>
+    <li>Observability Tooling<span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></span></li>
+  </ul>
+<div id="social-media">
+  <h2>Connect</h2>
+  <div id="social-media-terminal">
+    <p>$ ls connect/</p>
+    <ul id="social-media-list">
+      <li><a href="https://www.linkedin.com/in/rubensilvadev/" target="_blank">linkedin</a></li>
+      <li><a href="https://github.com/tycoon-dev" target="_blank">github</a></li>
+    </ul>
+  </div>
+</div>
+  <div id="status">All Systems Operational</div>
+</body>
+</html>
